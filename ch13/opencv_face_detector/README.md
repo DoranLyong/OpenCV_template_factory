@@ -1,0 +1,1 @@
+[opencv/samples/dnn/face_detector/](https://github.com/opencv/opencv/tree/master/samples/dnn/face_detector)
