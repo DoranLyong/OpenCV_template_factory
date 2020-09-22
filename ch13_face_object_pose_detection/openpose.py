@@ -64,7 +64,7 @@ for f in img_files:
         points.append((x, y) if conf > 0.1 else None)  # heat map threshold=0.1
 
     # drawing results 
-    for pair in pose_pairs:
+    for pair in tqdm(pose_pairs):
         p1 = points[pair[0]]
         p2 = points[pair[1]]
 
