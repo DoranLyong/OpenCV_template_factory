@@ -7,8 +7,6 @@
 import numpy as np 
 import cv2 
 
-from lib import mlutils
-
 def on_k_changed(pos):
     global k_value
 
