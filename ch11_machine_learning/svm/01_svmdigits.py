@@ -59,6 +59,7 @@ train_labels = np.repeat(np.arange(10), len(train_desc)/10)
 print('train_desc.shape:', train_desc.shape)
 print('train_labels.shape:', train_labels.shape)
 
+
 """4. SVM 학습 """ 
 
 svm = cv2.ml.SVM_create()
@@ -69,6 +70,7 @@ svm.setGamma(0.50625)
 
 svm.train(train_desc, cv2.ml.ROW_SAMPLE, train_labels)
 svm.save('svmdigits.yml')
+
 
 """ 5. 사용자 입력 영상에 대한 예측 """ 
 
