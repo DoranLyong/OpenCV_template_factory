@@ -18,7 +18,7 @@ DATA_DIR = Path('data')
 
 
 def main(): 
-    capture = cv2.VideoCapture("ZebraTrim.mp4")
+    capture = cv2.VideoCapture("rgb_video.mp4")
 
 
     while(True):
