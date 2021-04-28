@@ -27,6 +27,7 @@ file_list = natsorted(glob(osp.join("inference_outputs", "*.png")))
 #%% load images 
 for filename in tqdm(file_list):
     img = cv2.imread(filename)
+    img = cv2.resize(img, dsize=(1920, 1080), interpolation=cv2.INTER_AREA)  # (ref) https://076923.github.io/posts/Python-opencv-8/
 
     height, width, channel = img.shape
     size = (width,height)
